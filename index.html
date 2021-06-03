@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css">-->
+    <title>DZ14</title>
+</head>
+
+<body>
+    <!-- Задание № 1-->
+    <!--  <script>
+    function GetCompare(n1, n2){
+        if
+        (n1 > n2){
+        return n2} 
+        return n1;
+    }
+      let num1 = +prompt(`Число N1`);
+      let num2 = +prompt(`Число N2`);
+      let fun = GetCompare(num1, num2);
+      document.write(fun);
+    </script>-->
+
+    <!-- //Задание № 2-->
+    <!--     <script>
+    function GetCompare(n1, n2){
+        return n1 ** n2
+    }
+      let num1 = +prompt(`Число N1`);
+      let num2 = +prompt(`Степень N2`);
+      let fun = GetCompare(num1, num2);
+      document.write(fun);
+    </script>-->
+
+    <!--Задание № 3-->
+    <!-- <script>
+        function GetCompare(n1, n2, n3) {
+            switch (n3){
+            case `-`:
+                return n1 - n2;
+
+            case `/`: 
+            return n1 / n2;
+            case `+`:
+        return n1 + n2;
+            case `*`:
+           return n1 * n2;
+            }  
+    }
+            let num1 = +prompt(`Число N1`);
+            let num2 = +prompt(`Число N2`);
+            let num3 = prompt(`Арифметический знак + или -  или / или *`);
+            let fun = GetCompare(num1, num2, num3);
+            document.write(fun);
+    </script>-->
+
+    <!--Задание № 4-->
+    <!--    <script>
+  function GetCompare(n1) {
+    let n2 = ``;
+      for (let i = 2; i < n1; i++ ) {
+           n2 = n1 % i
+          if (n2 === 0) {
+             return alert(`Ваше число не является простым`) 
+          }
+                }
+             return alert (`Ваше число ${n1}  - простое `)
+  }
+            let num1 = +prompt(`Число N1`);
+            let fun = GetCompare(num1);  
+</script>-->
+
+    <!--//Задание № 5-->
+    <!--  <script>
+        function MultiTable(n1) {
+            let n2 = ``;
+            for (let i = 1; 0 < n1 && i < 10; i++) {
+                n2 = n1 * i
+                document.write(`${n1} * ${i} = ${n2} <br/>`)
+            }
+        }
+        let num1 = +prompt(`Число N1`);
+        let fun = MultiTable(num1);
+    </script>-->
+
+    <!--//Задание № 6-->
+    <!--<script>
+    function GetCompare(n1, n2) {
+    let n3 = 0, n4 = 0;
+            n3 = (n1 / n2) - ((n1 - n2) / n2) - 1;
+            n4 = (1 + n3) * n2;
+          n3 === 0 ? document.write(`Частное чисел равно ${n1 / n2} остаток 0`) :
+              document.write(`Остаток от деления ${n4}`)
+          }
+
+            let num1 = +prompt(`Число N1`);
+            let num2 = +prompt(`Число N2`);
+            let fun = GetCompare(num1, num2);
+    
+    </script>  -->
+
+    <!--//Задание № 7-->
+    <!-- <script>
+     function GetSum(arr) {
+        let sum = 0;
+            for (elem of arr){
+            sum += elem;   
+            }
+         return sum;
+          }
+         let arr = []; 
+         for (i = 0; i <5; i++){
+             arr[i] = +prompt(`Число ${i +1}`);
+         }
+   GetSum(arr)
+         document.write(GetSum(arr))  
+    </script> -->
+
+    <!--//Задание №8-->
+    <!-- <script>
+     function GetSum(n1, n2, n3, n4, n5) {
+         for (i = 1; i < n1 || i < n2 || i < n3 || i < n4 || i < n5; i++) {
+          } 
+         document.write(`Самое большое введеное число ${i}`); 
+     }
+            let num1 = +prompt(`Число N1`);
+            let num2 = +prompt(`Число N2`);
+            let num3 = +prompt(`Число N3`);
+            let num4 = +prompt(`Число N4`);
+            let num5 = +prompt(`Число N5`);
+            let fun = GetSum(num1, num2, num3, num4, num5);
+    </script>-->
+
+    <!-- Задание №9-->
+
+    <script>
+        function GetSum(n1, n2, n3) {
+            let overplus = 0;
+            for (i = 1; n1 <= n2; i++) {
+                overplus = n1 % 2;
+                if (overplus == 0 && typeof n3 != NaN) {
+                    document.write(` ${n1}`);
+                    n1 += 2;
+                    continue;
+                }
+             else (overplus !== 0 && typeof n3 === NaN)
+                for (i = 1; n1 <= n2; i++) {
+                        document.write(` ${n1}`)
+                        n1 += 2;
+                    }
+                }
+        }
+        let num1 = +prompt(`Начало диапазона N1`);
+        let num2 = +prompt(`Конец диапазона N2`);
+        let num3 = +prompt(`Четные числа если ввести число, нечетные числа если ничего не вводить`);
+        let fun = GetSum(num1, num2, num3);
+    </script>
+
+    <!-- Задание №9-->
+    <!--    <script>
+function today (setY, setM, setD){
+let date = new Date(setY, setM, setD);
+date.setDate(date.getDate() + 1);
+return (date);
+}
+
+let d = +prompt(`Введите число от 1 до 31`);
+let m = +prompt(`Введите число месяца, где 0 - январь`);
+let y = +prompt(`Введите год, в формате гггг`);
+today (y, m, d);
+document.write ( today (y, m, d) );
+</script>-->
+</body>
+
+</html>
