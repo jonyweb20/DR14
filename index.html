@@ -8,38 +8,37 @@
 </head>
 
 <body>
-    <!-- Задание № 1-->
-    <!--  <script>
+    <!-- Задание № 1 Функция,которая возвращает меньшее значение-->
+     <!-- <script>
     function GetCompare(n1, n2){
-        if
+      if
         (n1 > n2){
-        return n2} 
+        return n2}
         return n1;
     }
       let num1 = +prompt(`Число N1`);
       let num2 = +prompt(`Число N2`);
-      let fun = GetCompare(num1, num2);
-      document.write(fun);
+      let comp = GetCompare(num1, num2);
+      document.write(`Меньшее число из двух  `, comp)
     </script>-->
 
-    <!-- //Задание № 2-->
-    <!--     <script>
+    <!-- //Задание № 2 Функция,которая  выводит первое число в степень второго числа-->
+      <!--   <script>
     function GetCompare(n1, n2){
         return n1 ** n2
     }
       let num1 = +prompt(`Число N1`);
       let num2 = +prompt(`Степень N2`);
       let fun = GetCompare(num1, num2);
-      document.write(fun);
+      document.write(`Число  ${num1} , в степени  ${num2}, равно  ${fun}`);
     </script>-->
 
-    <!--Задание № 3-->
+    <!--Задание № 3 Функция,которая принимает два значения и арифметический знак (+, -, *, /) и возвращает результат-->
     <!-- <script>
         function GetCompare(n1, n2, n3) {
             switch (n3){
             case `-`:
                 return n1 - n2;
-
             case `/`: 
             return n1 / n2;
             case `+`:
@@ -52,10 +51,10 @@
             let num2 = +prompt(`Число N2`);
             let num3 = prompt(`Арифметический знак + или -  или / или *`);
             let fun = GetCompare(num1, num2, num3);
-            document.write(fun);
+            document.write(`Результат `,fun);
     </script>-->
 
-    <!--Задание № 4-->
+    <!--Задание № 4 Функция,которая проверяет является число простым-->
     <!--    <script>
   function GetCompare(n1) {
     let n2 = ``;
@@ -71,7 +70,7 @@
             let fun = GetCompare(num1);  
 </script>-->
 
-    <!--//Задание № 5-->
+    <!--//Задание № 5 Функция,которая выдает таблицу умножения на указанное число-->
     <!--  <script>
         function MultiTable(n1) {
             let n2 = ``;
@@ -84,24 +83,23 @@
         let fun = MultiTable(num1);
     </script>-->
 
-    <!--//Задание № 6-->
-    <!--<script>
+    <!--//Задание № 6 Функция реализует работу оператора % с помощью +, - , / , * -->
+  <!--  <script>
     function GetCompare(n1, n2) {
-    let n3 = 0, n4 = 0;
-            n3 = (n1 / n2) - ((n1 - n2) / n2) - 1;
-            n4 = (1 + n3) * n2;
-          n3 === 0 ? document.write(`Частное чисел равно ${n1 / n2} остаток 0`) :
-              document.write(`Остаток от деления ${n4}`)
-          }
-
-            let num1 = +prompt(`Число N1`);
-            let num2 = +prompt(`Число N2`);
+        let x = n1 / n2;
+        let step = ((n1 + 1 )/ n2) - x;
+        while (x >= 0){
+            x&#45;&#45;;
+            }
+        document.write(`Остаток от деления ${Math.round((x + 1)/step)}`)
+        }
+            let num1 = +prompt(`Параметр N1`);
+            let num2 = +prompt(`Параметр N2`);
             let fun = GetCompare(num1, num2);
-    
-    </script>  -->
+    </script>-->
 
-    <!--//Задание № 7-->
-    <!-- <script>
+    <!--//Задание № 7 Функция возвращает сумму введеных чисел-->
+ <!--    <script>
      function GetSum(arr) {
         let sum = 0;
             for (elem of arr){
@@ -114,10 +112,10 @@
              arr[i] = +prompt(`Число ${i +1}`);
          }
    GetSum(arr)
-         document.write(GetSum(arr))  
-    </script> -->
+         document.write(`Сумма чисел равна  `, GetSum(arr))
+    </script>-->
 
-    <!--//Задание №8-->
+    <!--//Задание №8 Функция возвращает большее из значений-->
     <!-- <script>
      function GetSum(n1, n2, n3, n4, n5) {
          for (i = 1; i < n1 || i < n2 || i < n3 || i < n4 || i < n5; i++) {
@@ -132,7 +130,7 @@
             let fun = GetSum(num1, num2, num3, num4, num5);
     </script>-->
 
-    <!-- Задание №9-->
+    <!-- Задание №9 Функция выводит все четные и нечетные числа в указанном диапазоне-->
 
   <!--  <script>
         function GetSum(n1, n2, n3) {
@@ -148,7 +146,7 @@
         console.log(fun)
     </script>-->
 
-    <!-- Задание №9-->
+    <!-- Задание №10 Функция принимает дата, а возвращает дату следующего дня-->
     <!--    <script>
 function today (setY, setM, setD){
 let date = new Date(setY, setM, setD);
