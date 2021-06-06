@@ -134,28 +134,19 @@
 
     <!-- Задание №9-->
 
-    <script>
+  <!--  <script>
         function GetSum(n1, n2, n3) {
-            let overplus = 0;
-            for (i = 1; n1 <= n2; i++) {
-                overplus = n1 % 2;
-                if (overplus == 0 && typeof n3 != NaN) {
-                    document.write(` ${n1}`);
-                    n1 += 2;
-                    continue;
-                }
-             else (overplus !== 0 && typeof n3 === NaN)
-                for (i = 1; n1 <= n2; i++) {
-                        document.write(` ${n1}`)
-                        n1 += 2;
-                    }
+            n3 ? n1 % 2 !== 0 && ++n1 : n1 % 2 === 0 && &#45;&#45;n1
+            for (; n1 <= n2; n1 +=2) {
+                document.write(` ${n1}`);
                 }
         }
         let num1 = +prompt(`Начало диапазона N1`);
         let num2 = +prompt(`Конец диапазона N2`);
-        let num3 = +prompt(`Четные числа если ввести число, нечетные числа если ничего не вводить`);
+        let num3 = confirm(`"OK" - Четные числа, "Отмена" - нечетные числа`);
         let fun = GetSum(num1, num2, num3);
-    </script>
+        console.log(fun)
+    </script>-->
 
     <!-- Задание №9-->
     <!--    <script>
